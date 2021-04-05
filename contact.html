@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <title>Abo Norah restaurant - Contact Page</title>
+	<link href="style.css" rel="stylesheet" />
+</head>
+<!--
+
+Abo Norah restaurant
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/header_Image.jpg">
+				<div class="header">
+					<div class="row header-inner">
+						<div class="col-12">
+							<img src="img/logo.png" alt="Logo"/> 
+							<div class="text-box">
+								<h1 class="site-title">Abo Norah restaurant</h1>
+								<h6 class="site-description">Made with love and passion</h6>	
+							</div>
+						</div>
+						<nav class="col-12 nav">
+							<ul class="nav-ul">
+								<li class="nav-li"><a href="index.html" class="nav-link">Home</a></li>
+								<li class="nav-li"><a href="contact.html" class="nav-link active">Contact</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+
+		<main>
+			<header class="welcome-section">
+				<h2 class="col-12 text-center section-title">Contact us</h2>
+				<p class="col-12 text-center">if you have any problem or any additional Suggestions please contact with us</p>
+			</header>
+
+			<div class="container-inner-2 contact-section">
+						<div class="address-box">
+							<h4 class="info-title text-success">Our Address</h4>
+							<address>
+								Jeddah, Bani Malik , Malik ibn Alsamh street
+							</address>
+							<a href="tel:+966560517272" class="contact-link">
+								Phone: +966-56-051-7272
+							</a>
+							<a href="mailto:AboNorah@company.com" class="contact-link">
+								Email: AboNorah@company.com
+							</a>
+						</div>
+			</div>
+            
+			<div class="container-inner-2 map-section">
+				<div class="row">
+					<div class="col-12">
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6241.79446000749!2d39.22219672301575!3d21.531475719990155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d1de21ef7e69%3A0x18bbe89827e9437e!2z2KjZhtmKINmF2KfZhNmD2Iwg2KzYr9ip!5e0!3m2!1sar!2ssa!4v1617626818778!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+					</div>
+				</div>
+			</div>
+			
+		</main>
+
+		<footer class="footer text-center">
+			<p>Copyright &copy; 2021 Abo Norah</p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}	
+		});
+	</script>
+</body>
+</html>
